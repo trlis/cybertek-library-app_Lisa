@@ -22,7 +22,7 @@ public class LoginPage {
     @FindBy(xpath="//button[.='Sign in']")
     public WebElement SignIn;
 
-   public void logIn(){
+   public void logInAsLib(){
 
        String lib59Username = ConfigurationReader.getProperty("lib59_username");
        String lib59Password = ConfigurationReader.getProperty("lib59_password");
@@ -32,6 +32,14 @@ public class LoginPage {
        SignIn.click();
    }
 
+    public void logInAsStudent(){
+        String username = ConfigurationReader.getProperty("stu64_username");
+        String password = ConfigurationReader.getProperty("stu64_password");
+
+        EmailAddress.sendKeys(username);
+        Password.sendKeys(password);
+        SignIn.click();
+    }
 
 
 

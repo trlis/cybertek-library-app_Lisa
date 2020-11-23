@@ -2,7 +2,6 @@ package com.cybertek.library.step_definitions;
 
 import com.cybertek.library.pages.HomePage;
 import com.cybertek.library.pages.LoginPage;
-import com.cybertek.library.utilities.ConfigurationReader;
 import com.cybertek.library.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -15,7 +14,7 @@ public class RecordStepDefinitions {
 
     @When("User logs in with email and password")
     public void user_logs_in_with_email_and_password() {
-     loginPage.logIn();
+     loginPage.logInAsLib();
     }
 
     @Then("User see number of {string}")

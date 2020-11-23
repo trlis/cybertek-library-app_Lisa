@@ -1,4 +1,4 @@
-@login
+@login_mine
 Feature:Login
   Agile Story: As I user, I should be able to login
 
