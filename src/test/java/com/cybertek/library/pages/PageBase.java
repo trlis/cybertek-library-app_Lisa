@@ -22,4 +22,6 @@ public class PageBase {
 
     @FindBy(xpath = "//a[@id='navbarDropdown']/span")
     public WebElement accountUsername;
+
+    //
 }
